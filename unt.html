@@ -1,0 +1,22 @@
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+  $(function() {
+    $("#btn-text").click(function() {
+      $("#div1").text("안녕 <b>친구들!</b>");
+    });
+    $("#btn-html").click(function() {
+      $("#div1").html("안녕 <b>친구들!</b>");
+    });
+    $("#btn-val").click(function() {
+      $("#input1").val("안녕 <b>친구들!</b>");
+    });
+  });
+</script>
+
+<div id="div1">여기는 div</div>
+<button id="btn-text">text()</button>
+<button id="btn-html">html()</button>
+
+<hr>
+<input type="text" id="input1" value="여기는 input" />
+<button id="btn-val">val()</button>
